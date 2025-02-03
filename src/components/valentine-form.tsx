@@ -10,6 +10,8 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel"
 import { Heart, Download, ArrowRight, ArrowLeft } from "lucide-react"
 
+import Image from 'next/image'
+
 interface FormData {
   name: string
   message: string
@@ -68,9 +70,11 @@ export function ValentineForm() {
                 <div className="relative">
                   <div className="bg-red-50 border-2 border-red-200 rounded-lg p-4 flex items-center gap-4 m-4">
                     <div className="relative w-16 h-16 rounded-full overflow-hidden bg-pink-100 flex-shrink-0">
-                      <img
-                        src="/placeholder.svg?height=64&width=64"
+                      <Image
+                        src="/images/Chimezie.jpg"
                         alt="Profile"
+                        width={64}
+                        height={64}
                         className="w-full h-full object-cover"
                       />
                       <div className="absolute inset-0 bg-red-500/10" />
